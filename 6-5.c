@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    float x, y;
+    printf("Enter the value of x: ");
+    scanf("%f", &x);
+
+    if(x < 50)
+        y = 2 * x + 100;
+    else if(x == 50)
+        y = 3 * x + 100;
+    else
+        y = 5 * x - 200;
+
+    printf("x = %.2f\ny = %.2f\n", x, y);
+    return 0;
+}
