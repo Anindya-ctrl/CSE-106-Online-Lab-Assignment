@@ -1,13 +1,17 @@
 #include <stdio.h>
 
+// function for checking leap year
 int is_leap_year(int year);
+// function of checking validity if a date
 int is_valid_date(int day, int month, int year);
 
 int main() {
+    // take the date as input
     int day, month, year;
     printf("Enter a date in the dd/mm/yyyy format: ");
     scanf("%d/%d/%d", &day, &month, &year);
 
+    // check validity and output accordingly
     is_valid_date(day, month, year) ? printf("Given date is valid\n") : printf("Given date is invalid\n");
     return 0;
 }

@@ -1,9 +1,9 @@
-#include <math.h>
 #include <stdio.h>
+#include <math.h>
 
 int main() {
+    // take u, a, s as input
     float u, a, s;
-    double v;
     printf("Enter initial valocity: ");
     scanf("%f", &u);
 
@@ -13,8 +13,7 @@ int main() {
     printf("Enter distance traveled: ");
     scanf("%f", &s);
 
-    // use -lm flag on gcc for Linux, e.g.: `gcc 5-7.c -lm`
-    v = sqrt((u * u) - (2 * a * s));
-    printf("Final valocity: %.2f\n", v);
+    // calculate v using the given formula and display it
+    printf("Final valocity: %.2f\n", sqrt((u * u) - (2 * a * s)));
     return 0;
 }

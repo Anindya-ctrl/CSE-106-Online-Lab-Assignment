@@ -6,9 +6,11 @@ struct Date {
     int year;
 };
 
+// function for checking if one date is earlier than the other
 int is_earlier(struct Date date1, struct Date date2);
 
 int main() {
+    // take the dates as input
     struct Date date1, date2;
     printf("Enter the first date (dd/mm/yyyy): ");
     scanf("%d/%d/%d", &date1.day, &date1.month, &date1.year);
@@ -16,6 +18,7 @@ int main() {
     printf("Enter the second date (dd/mm/yyyy): ");
     scanf("%d/%d/%d", &date2.day, &date2.month, &date2.year);
 
+    // check if one date is earlier than the other, and output accordingly
     is_earlier(date1, date2) ? printf("First date is earlier than second date\n") : printf("First date is not earlier than second date\n");
     return 0;
 }

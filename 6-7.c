@@ -1,10 +1,12 @@
 #include <stdio.h>
 
 int main() {
+    // take the code as input
     int num;
     printf("Enter a number between 1 and 5 (inclusive): ");
     scanf("%d", &num);
 
+    // display the corresponding color for the given code
     switch(num) {
         case 1:
             printf("Red\n");

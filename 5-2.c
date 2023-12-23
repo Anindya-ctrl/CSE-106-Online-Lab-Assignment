@@ -2,14 +2,12 @@
 #include <stdio.h>
 
 int main() {
+    // take radius as input
     double radius, area, circumference;
-    const double PI = M_PI;
-
     printf("Enter a radius: ");
     scanf("%lf", &radius);
 
-    area = PI * radius * radius;
-    circumference = 2 * PI * radius;
-    printf("Area of circle: %.2lf\nCircumference of circle: %.2lf\n", area, circumference);
+    // caculate area and circumference, then display both
+    printf("Area of circle: %.2lf\nCircumference of circle: %.2lf\n", M_PI * radius * radius, 2 * M_PI * radius);
     return 0;
 }
