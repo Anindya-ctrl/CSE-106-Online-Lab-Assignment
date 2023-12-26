@@ -3,7 +3,7 @@
 
 int main() {
     // take radius as input
-    double radius, area, circumference;
+    double radius;
     printf("Enter a radius: ");
     scanf("%lf", &radius);
 
